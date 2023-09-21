@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>工作区,版本库M,暂存区,撤销修改</title>
+  </head>
+  <body>
+    <script>
+      //git add 会把我们的文件添加到暂存区里面
+      //git commit 命令可以把我们的暂存区里面的内容提交到master分支上
+      //git restore file1.txt
+      //git checkout -- file1.txt 已经提交到暂存区
+
+      //gitrestore --staged file1.txt 把已经add得文件从暂存区撤回
+      //如果已经提交到了版本库
+      //1. git log
+      //2. git reset --hard HEAD^
+      //把这个版本指向上一个版本,这样我们的修改就没有了
+      //3.如何删除文件rm file3.txt
+      //git commit -m "删除了file3.txt"
+      //如果我把它提交到了版本库 然后又把它删掉的话
+      //我们可以使用git checkout --file3.txt来恢复当前的文件
+      //如果我们的文件都没有到达版本库的话  删除了就没有办法恢复了
+    </script>
+  </body>
+</html>
